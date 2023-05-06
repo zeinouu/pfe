@@ -1,0 +1,124 @@
+/* Styles for the whole page */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+section {
+  padding-top: 0px;
+  
+}
+
+  .topnav {
+    background-color: #0a549a;
+    height: 53px;
+  }
+  .inline {
+    display: flex;
+    justify-content: space-between;
+  }
+  .inline div:nth-child(2) {
+    margin-left: auto;
+  }
+  .bb{
+    
+    border-radius: 5px;
+    padding: 8px 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 17px;
+  }
+
+
+.sidebar {
+  background-color: #0a549a;
+  top: 46px; /* Set this to the height of your navbar */
+  bottom: 0;
+  width: 265px;
+ position: fixed;
+}
+
+.sidebar hr {
+  margin-top: 12px;
+}
+
+.sidebar .databases {
+  font-size: 17px;
+  margin-top: 15px;
+  margin-left: 49px;
+  color: #ffffff;
+}
+
+.container1 {
+  /* margin-left: 15%; */
+  z-index: 1;
+
+ 
+}
+.container1 {
+  display: grid;
+  grid-template-columns: 0.3fr 0.05fr 0.3fr; /* Modify the grid layout to better accommodate the smaller box2 */
+  gap: 2rem; /* Adjust this value according to the desired gap between the boxes */
+  padding: 2rem;
+  margin-left: 430px;
+  width: calc(100% - 265px); 
+}
+
+.box1,
+.box3 {
+  background-color: #0a549a;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  max-height: 100%;
+  overflow-y: auto;
+  margin-top: 0.5rem;
+}
+
+.box1,
+.box3 {
+  height: 596px;
+}
+
+.box2 {
+  background-color: #0a549a;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  max-height: 100%;
+  overflow: auto;
+  height: 220px; /* Adjust the height to make the box2 smaller */
+  width: 100%; /* Set the width to 100% to fit within the grid column */
+  margin-top: 12rem;
+}
+
+.thez{
+  border-color: #0a549a;
+  padding: 8px 6px;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-left: 0px;
+}
+.tjib{
+  border-color: #0a549a;
+  padding: 8px 6px;
+  background-color: transparent;
+  margin-top: 30px;
+  margin-left: 0px;
+}
+
+

@@ -1,0 +1,325 @@
+/* Styles for the whole page */
+html, body, #root {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow-x: hidden ;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+  }
+  
+  /* Styles for Navbar section */
+  .topnav {
+    background-color: #0a549a;
+    overflow: hidden; 
+    height: 53px;
+  }
+
+  
+  .topnav .buttonn {
+    margin-right: 25px;
+    font-size: 16px;
+    margin-left: 12px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 17px;
+   
+  }
+  
+  .topnav .topnav-right {
+    float: right;
+  }
+  
+  .topnav .button {
+    margin-right: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    background-color: white;
+    color: #0a549a;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 6px;
+
+  }
+  
+  
+  /* Styles for Sidebar section */
+  .sidebar {
+    background-color: #0a549a;
+    position: absolute; 
+    top: 40px; /* Set this to the height of your navbar */
+    bottom: 0;
+    width: 235px;
+  }
+  
+  .sidebar .button {
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    background-color: white;
+    color: #0a549a;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 29px;
+  }
+ 
+  .sidebar .butcon{
+    margin: 10px;
+    pointer-events: fill;
+    padding: 4px 18px;
+    margin-left: 22px;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 17px;
+
+  }
+  
+  .sidebar hr {
+    margin: 10px;
+  }
+
+  .sidebar p {
+    margin-left: 32px;
+    font-size: 17px;
+  }
+  
+  
+  /* Styles for Main Content section */
+  .container {
+    /* margin-left: 15%; */
+    z-index: 1;
+ 
+   
+  }
+  
+  .box {
+    position: fixed;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    background-color: #0a549a;
+    border-radius: 10px;
+    padding: 230px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    min-width: 55%;
+    max-height: 100%;
+    overflow-y: auto;
+    height: 496px;
+    overflow: hidden;
+  }
+
+  /* .box .p1 {
+    position: absolute;
+    top: 10px;
+    left: 21px;
+    margin: 2px;
+    font-size: 18px;
+    color: #fff;
+  } */
+  /* .box .p2 {
+    position: absolute;
+    top: 40px;
+    left: 23px;
+    margin: 2px;
+    font-size: 13px;
+    color: #2d2b2b;
+  } */
+  
+  .box .p3 {
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    margin: 2px;
+    font-size: 20px;
+    color: #efdfdf;
+  }
+  .box .p5 {
+    position: absolute;
+    top: 40px;
+    left: 230px;
+    margin: 2px;
+    font-size: 20px;
+    color: #efdfdf;
+  }
+  .box .uri {
+    position: absolute;
+    top: 80px;
+    left: 23px;
+    margin: 2px;
+    font-size: 16px;
+    color: black;
+    border-radius: 10px;
+  }
+  .box .port {
+    position: absolute;
+    top: 80px;
+    left: 230px;
+    margin: 2px;
+    font-size: 16px;
+    color: black;
+    border-radius: 10px;
+  }
+  .box .p4 {
+    position: absolute;
+    top: 145px;
+    left: 26px;
+    margin: 2px;
+    font-size: 16px;
+    color: #efdfdf;
+    border-radius: 10px;
+  }
+  .box .button {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    background-color: white;
+    color: #0a549a;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    top: 178px;
+    left: 50px;
+    margin: 2px;
+    z-index: 2;
+  }
+  .box .buttonn {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    background-color: white;
+    color: #0a549a;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    top: 178px;
+    left: 135px;
+    margin: 2px;
+    z-index: 1;
+  }
+  .box .authentication{
+    position: absolute;
+    flex-direction: column;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-left: 20px;
+    top: 40%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    padding: 120px;
+    min-width: 89%;
+    max-height: 180%;
+    overflow-y: auto;
+    height: 340px;
+    overflow: hidden;
+  }
+  .username, .password, .authdata {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .username p {
+    margin-right: 14px;
+    color: #f2f2f2;
+  }
+  .password p {
+    margin-right: 19px;
+    color: #f2f2f2;
+
+  }
+  .authdata p {
+    margin-right: 14px;
+    display: inline-block;
+  vertical-align: middle;
+  color: #f2f2f2;
+
+
+  }
+
+  .username input {
+    height: 30px; 
+    width: 300px; 
+    padding: 5px; 
+  }
+  .password input {
+    height: 30px;
+    width: 300px; 
+    padding: 5px; 
+  }
+  .authdata input {
+    height: 30px;
+    width: 300px;
+    padding: 5px; 
+    display: inline-block;
+  vertical-align: middle;
+  }
+.box .connectt {
+  position: absolute;
+  bottom: 10px;
+  right: 23px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 8px 15px;
+  background-color: white;
+  color: #0a549a;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.authentication .default {
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 8px 13px;
+  background-color: white;
+  color: #0a549a;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  top: 290px;
+  left: 135px;
+  margin: 2px;
+  z-index: 2;
+}
+.authentication .scram {
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 8px 13px;
+  background-color: white;
+  color: #0a549a;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  top: 290px;
+  left: 230px;
+  margin: 2px;
+  z-index: 2;
+}
+.authentication .p6{
+  position: absolute;
+  top: 260px;
+  left: 117px;
+  margin: 2px;
+  font-size: 16px;
+  color: #efdfdf;
+}
